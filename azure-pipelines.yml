@@ -16,6 +16,9 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
+    conda -V
+    conda list -n project_environment --json
+    conda info --json
   displayName: 'Run a multi-line script'
 
 - task: BlackDuckSecurityScan@2
