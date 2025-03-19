@@ -17,3 +17,10 @@ steps:
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+- task: BlackDuckSecurityScan@2
+  inputs:
+    scanType: 'blackducksca'
+    blackduckScaUrl: 'https://expressonboarding.app.blackduck.com/'
+    blackduckScaToken: 'MjczZjFmNjAtYTBkOC00MjFlLWJjZGItNDIxNjU1MWEzYjExOjRkMWI5ZmEyLWI0MGUtNDU3NS05ZjUxLTM0ZTY5YjMwZWVmYg=='
+    blackduckScaScanFull: true
