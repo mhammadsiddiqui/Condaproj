@@ -14,17 +14,10 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
     echo Checking version
     conda -V
-    echo Checking proj env list
-    conda list -n project_environment --json
-    echo Checking info list
-    conda info --json
     echo Checking variable value
-#   echo ${{BdToken.value}}
-#   echo $(BdToken)
+    echo $(BdToken)
   displayName: 'Run a multi-line script'
 
 # - task: BlackDuckSecurityScan@2
