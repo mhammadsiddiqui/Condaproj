@@ -23,5 +23,5 @@ steps:
   inputs:
     scanType: 'blackducksca'
     blackduckScaUrl: 'https://expressonboarding.app.blackduck.com/'
-    blackduckScaToken: $(BdToken)
+    blackduckScaToken: $(BDTOKEN)
     blackduckScaScanFull: true
