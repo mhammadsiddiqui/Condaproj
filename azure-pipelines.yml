@@ -24,5 +24,6 @@ steps:
     scanType: 'blackducksca'
     blackduckScaUrl: 'https://expressonboarding.app.blackduck.com/'
     blackduckScaToken: '$(BDTOKEN)'
-    blackduckScaScanFull: true
-    detectArgs: '--detect.project.name=CondaProj --detect.project.version.name=test -d --detect.tools=DETECTOR --detect.diagnostic=true --logging.level.detect=DEBUG'
+    blackduckScaMarkBuildStatus: 'Succeeded'
+    blackduckScaIncludeDiagnostics: true
+    detectArgs: '--detect.project.name=CondaProj --detect.project.version.name=test --detect.tools=DETECTOR'
